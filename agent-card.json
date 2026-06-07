@@ -1,0 +1,71 @@
+{
+  "name": "agisafe",
+  "description": "AGI safety research hub — frontier-model governance.",
+  "url": "https://agisafe.ai",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "care-membrane-mcp",
+      "name": "care-membrane-mcp",
+      "description": "Tool: care-membrane-mcp (part of agisafe.ai hive L5)"
+    },
+    {
+      "id": "ai-self-audit-mcp",
+      "name": "ai-self-audit-mcp",
+      "description": "Tool: ai-self-audit-mcp (part of agisafe.ai hive L5)"
+    },
+    {
+      "id": "deepfake-detector-mcp",
+      "name": "deepfake-detector-mcp",
+      "description": "Tool: deepfake-detector-mcp (part of agisafe.ai hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'agisafe'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://agisafe.ai/oauth/authorize",
+          "tokenUrl": "https://agisafe.ai/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": false,
+    "currency": "USD",
+    "amount": "0.00",
+    "freeCallsPerIPPerDay": "100"
+  }
+}
