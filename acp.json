@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "agisafe",
+    "description": "AGI safety research hub \u2014 frontier-model governance.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://agisafe.ai"
+      }
+    ],
+    "capabilities": [
+      "care-membrane-mcp",
+      "ai-self-audit-mcp",
+      "deepfake-detector-mcp",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
