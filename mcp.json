@@ -1,0 +1,14 @@
+{
+  "name": "agisafe.ai",
+  "title": "AGI Safe — Safe AGI Development",
+  "description": "Focused on the safe development and deployment of artificial general intelligence under MEOK stewardship.",
+  "cluster": "TRUST-GOVERNANCE",
+  "servers": [
+        { "id": "agi-safety-mcp.sov3.meok.ai", "url": "https://agi-safety-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "capability-monitor-mcp.sov3.meok.ai", "url": "https://capability-monitor-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "containment-mcp.sov3.meok.ai", "url": "https://containment-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}
